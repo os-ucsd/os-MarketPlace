@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.projects {
+  display: block;
+  margin-left: 110px;
+  margin-right: auto;
+  width: fit-content;
+}
+.button {
+  padding-top: 30px;
+}

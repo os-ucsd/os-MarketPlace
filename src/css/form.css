@@ -1,0 +1,10 @@
+.form {
+  padding: 30px;
+}
+
+.button {
+  display: block;
+  margin-left: 45%;
+  margin-right: auto;
+  width: auto;
+}
