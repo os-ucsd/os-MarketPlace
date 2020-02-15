@@ -10,3 +10,7 @@ h1 {
   margin-right: auto;
   width: fit-content;
 }
+
+.button {
+  padding-top: 30px;
+}

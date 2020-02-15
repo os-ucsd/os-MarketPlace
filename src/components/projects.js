@@ -3,6 +3,19 @@ import "../css/projects.css"
 import React from "react";
 import axios from "axios"
 
+const EachProject = props => {
+  	return(
+<Card style={{ width: "18rem" }}>
+    <Card.Img variant="top" src={props.project.user.avatar_url} />
+    <Card.Body>
+        <Card.Title>{props.project.title}</Card.Title>
+        <Card.Text>{props.project.body}</Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+    </Card.Body>
+</Card>
+	);
+};
+
 class Project extends React.Component {
 
 constructor(props) {
@@ -26,24 +39,23 @@ componentDidMount() {
       .catch(err => console.log(err));
 }
 
-    render(){
-		return(
-			<div>
-			
-			<div className="projects">
- 				<Card style={{ width: "18rem" }}>
-    <Card.Img variant="top" src={Object(Object(this.state.projects[0]).user).avatar_url}/>
-    <Card.Body>
-        <Card.Title>{Object(this.state.projects[0]).title}</Card.Title>
-        <Card.Text>{Object(this.state.projects[0]).body}</Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-    </Card.Body>
-</Card>
-			</div>
+    showProject(projects) {
+    	return projects.map(project => {
+      	return <EachProject project={project} key={project.id} />;
+   	 });
+    }
 
-			</div>
-		)
-	}
+    render() {
+    return (
+      <div>
+        <h1>OS MARKETPLACE</h1>
+        <div className="projects">{this.showProject(this.state.projects)}</div>
+        <div className="button">
+          <Button variant="primary" href="/form">Share Project</Button>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Project;
