@@ -20,7 +20,7 @@ function App() {
   }, [isLoading])
 
   return (
-    <div >
+    <div className="">
       <div className="bg-blue-300 h-48 w-full pt-12"> <h1 className="font-serif tracking-wide text-center text-white text-5xl">OS MARKETPLACE</h1></div>
       <br></br>
       <br />
