@@ -47,8 +47,8 @@ function ProjectCard(content) {
     })
 
     return (
-        <div className="rounded-lg overflow-hidden shadow-lg" style={{ height: "700px" }} >
-            <a href={content.content.html_url} cursor-pointer>
+        <div className="rounded-lg overflow-hidden shadow-lg ">
+            <a href={content.content.html_url} cursor-pointer >
                 <img src={content.content.owner.avatar_url} alt="projectImage" style={{ width: "500px" }} />
                 <div className="px-6 py-4">
                     <div className="font-bold text-blue-500 text-xl mb-2">
@@ -62,6 +62,7 @@ function ProjectCard(content) {
                     </ul>
                 </div>
                 <ProjectTag tagList={content.content.url} />
+
             </a>
         </div>
     )
