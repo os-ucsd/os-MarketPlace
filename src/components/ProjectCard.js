@@ -48,7 +48,7 @@ function ProjectCard(content) {
 
     return (
         <div className="rounded-lg overflow-hidden shadow-lg ">
-            <a href={content.content.html_url} cursor-pointer >
+            <a href={content.content.html_url} className="cursor-pointer" >
                 <img src={content.content.owner.avatar_url} alt="projectImage" style={{ width: "500px" }} />
                 <div className="px-6 py-4">
                     <div className="font-bold text-blue-500 text-xl mb-2">

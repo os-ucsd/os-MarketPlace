@@ -26,7 +26,7 @@ function App() {
       <br />
       <div className="container ml-32">
         {isLoading ? <h1 className="text-6xl text-center">Loading ...</h1>
-          : <div className="grid grid-cols-3 gap-4">
+          : <div className="grid grid-cols-3 gap-10">
             {projectList.map(project => (<ProjectCard key={project.id} content={project} />))}
           </div>}
       </div>
