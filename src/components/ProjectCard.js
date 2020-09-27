@@ -12,7 +12,7 @@ function ProjectCard(content) {
                 setContributor(data)
             })
             .catch(err => console.log(err))
-    }, [])
+    }, [content.content.contributors_url])
 
     // Handle mapping the contributor list     
     const contributorList = contributors.length > 1 ? contributors.map((e, index) => {
@@ -35,6 +35,11 @@ function ProjectCard(content) {
                 <div key={e.id} className="inline">
                     ...{" "}
                 </div>
+            )
+        }
+        else {
+            return (
+                null
             )
         }
 

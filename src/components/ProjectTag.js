@@ -10,9 +10,9 @@ function ProjectTag(tagList) {
             .then(data => {
                 const listTag = Object.keys(Object(data))
                 setTags(listTag)
-            }).
-            catch(err => console.log(err))
-    }, [])
+            })
+            .catch(err => console.log(err))
+    }, [tagList.tagList])
 
     return (
         <div className="px-6 py-4 ">
