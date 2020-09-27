@@ -1,5 +1,6 @@
 # OS MARKETPLACE
-A place to display all projects from Open Source at UCSD. Developed using ReactJS, Tailwind CSS and GitHub API.
+- A place to display all projects from Open Source at UCSD. Developed using ReactJS, Tailwind CSS and GitHub API.
+- The site is live at: https://os-marketplace.netlify.app/
 
 ## Get Started
 - Clone the repo 
